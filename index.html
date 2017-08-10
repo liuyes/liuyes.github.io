@@ -1,31 +1,380 @@
-
 <!DOCTYPE html>
-<html lang='zh-CN'>
-<head>
-<meta charset='utf-8'>
-<meta content='IE=edge' http-equiv='X-UA-Compatible'>
-<meta content='UIViewExt-Swift,Swift' name='Keywords'>
-<meta content='UIViewExt的Swift版本' name='Description'>
-<title>
-test io
-</title>
-<link href="http://git.oschina.net/assets/application-f52885388f7109d9b3b4ee68ecb17657.css" media="screen" rel="stylesheet" type="text/css" />
-</head>
+  <html>
+    <head>
+      <title>README</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+      
 
-<body class='ui_basic project'>
+      
+      
+      
 
-<div id='git-readme'>
-<div class='file_holder'>
-<div class='file_title'>
-<i class='octicon octicon-book'></i>
-<span class='file_name'>
-README.md
-<small>400 Bytes</small>
-</span>
+      <style> 
+      /**
+ * prism.js Github theme based on GitHub's theme.
+ * @author Sam Clarke
+ */
+code[class*="language-"],
+pre[class*="language-"] {
+  color: #333;
+  background: none;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.4;
+
+  -moz-tab-size: 8;
+  -o-tab-size: 8;
+  tab-size: 8;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+  padding: .8em;
+  overflow: auto;
+  /* border: 1px solid #ddd; */
+  border-radius: 3px;
+  /* background: #fff; */
+  background: #f5f5f5;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+  padding: .1em;
+  border-radius: .3em;
+  white-space: normal;
+  background: #f5f5f5;
+}
+
+.token.comment,
+.token.blockquote {
+  color: #969896;
+}
+
+.token.cdata {
+  color: #183691;
+}
+
+.token.doctype,
+.token.punctuation,
+.token.variable,
+.token.macro.property {
+  color: #333;
+}
+
+.token.operator,
+.token.important,
+.token.keyword,
+.token.rule,
+.token.builtin {
+  color: #a71d5d;
+}
+
+.token.string,
+.token.url,
+.token.regex,
+.token.attr-value {
+  color: #183691;
+}
+
+.token.property,
+.token.number,
+.token.boolean,
+.token.entity,
+.token.atrule,
+.token.constant,
+.token.symbol,
+.token.command,
+.token.code {
+  color: #0086b3;
+}
+
+.token.tag,
+.token.selector,
+.token.prolog {
+  color: #63a35c;
+}
+
+.token.function,
+.token.namespace,
+.token.pseudo-element,
+.token.class,
+.token.class-name,
+.token.pseudo-class,
+.token.id,
+.token.url-reference .token.variable,
+.token.attr-name {
+  color: #795da3;
+}
+
+.token.entity {
+  cursor: help;
+}
+
+.token.title,
+.token.title .token.punctuation {
+  font-weight: bold;
+  color: #1d3e81;
+}
+
+.token.list {
+  color: #ed6a43;
+}
+
+.token.inserted {
+  background-color: #eaffea;
+  color: #55a532;
+}
+
+.token.deleted {
+  background-color: #ffecec;
+  color: #bd2c00;
+}
+
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+
+/* JSON */
+.language-json .token.property {
+  color: #183691;
+}
+
+.language-markup .token.tag .token.punctuation {
+  color: #333;
+}
+
+/* CSS */
+code.language-css,
+.language-css .token.function {
+  color: #0086b3;
+}
+
+/* YAML */
+.language-yaml .token.atrule {
+  color: #63a35c;
+}
+
+code.language-yaml {
+  color: #183691;
+}
+
+/* Ruby */
+.language-ruby .token.function {
+  color: #333;
+}
+
+/* Markdown */
+.language-markdown .token.url {
+  color: #795da3;
+}
+
+/* Makefile */
+.language-makefile .token.symbol {
+  color: #795da3;
+}
+
+.language-makefile .token.variable {
+  color: #183691;
+}
+
+.language-makefile .token.builtin {
+  color: #0086b3;
+}
+
+/* Bash */
+.language-bash .token.keyword {
+  color: #0086b3;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]{position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){padding:2em calc(50% - 457px)}}@media screen and (max-width:914px){html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){padding:2em}}@media screen and (max-width:450px){html body[for="html-export"] .markdown-preview:not([data-presentation-mode]){font-size:14px !important;padding:1em}}@media print{html body[for="html-export"] #sidebar-toc-btn{display:none}}html body[for="html-export"] #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"][html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"][html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"][html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"][html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"][html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([html-show-sidebar-toc]) .md-sidebar-toc{display:none} 
+       
+      </style>
+    </head>
+    <body for="html-export">
+      <div class="mume markdown-preview   ">
+      <h1 class="mume-header" id="qywx">qywx</h1>
+
+<p>企业微信的项目</p>
+<h2 class="mume-header" id="&#x9879;&#x76EE;&#x4ECB;&#x7ECD;">项目介绍</h2>
+
+<p>可以简单的把本项目看作<a href="https://gitee.com/karson/fastadmin">@fastadmin</a>的java实现版本，目前主要实现了用户、角色（群组）和规则（菜单）管理，后续将实现一个企业微信的管理系统。</p>
+<h3 class="mume-header" id="&#x7EC4;&#x7EC7;&#x7ED3;&#x6784;">组织结构</h3>
+
+<pre class="language-">ssopay-qywx
+&#x251C;&#x2500;&#x2500; ssopay-qywx-common -- &#x516C;&#x5171;&#x6A21;&#x5757;&#xFF0C;&#x4E00;&#x4E9B;&#x5DE5;&#x5177;&#x7C7B;&#x53CA;&#x5E38;&#x91CF;&#x5B9A;&#x4E49;
+&#x251C;&#x2500;&#x2500; ssopay-qywx-bean -- &#x6570;&#x636E;&#x5E93;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F53;&#x7C7B;
+&#x251C;&#x2500;&#x2500; ssopay-qywx-dao -- MyBatis DAO
+&#x251C;&#x2500;&#x2500; ssopay-qywx-admin -- &#x540E;&#x53F0;&#x7BA1;&#x7406;
+&#x251C;&#x2500;&#x2500; ssopay-qywx-web -- &#x524D;&#x53F0;&#x754C;&#x9762;&#xFF0C;&#x6682;&#x672A;&#x5B9E;&#x73B0;
+</pre>
+<h3 class="mume-header" id="&#x6280;&#x672F;&#x9009;&#x578B;">技术选型</h3>
+
+<h4 class="mume-header" id="&#x540E;&#x7AEF;&#x6280;&#x672F;">后端技术:</h4>
+
+<table>
+<thead>
+<tr>
+<th>技术</th>
+<th>名称</th>
+<th>官网</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Spring Framework</td>
+<td>容器</td>
+<td><a href="http://projects.spring.io/spring-framework/">http://projects.spring.io/spring-framework/</a></td>
+</tr>
+<tr>
+<td>SpringMVC</td>
+<td>MVC框架</td>
+<td><a href="http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#mvc">http://docs.spring.io/spring/docs/current/spring-framework-reference/htmlsingle/#mvc</a></td>
+</tr>
+<tr>
+<td>Apache Shiro</td>
+<td>安全框架</td>
+<td><a href="http://shiro.apache.org/">http://shiro.apache.org/</a></td>
+</tr>
+<tr>
+<td>MyBatis</td>
+<td>ORM框架</td>
+<td><a href="http://www.mybatis.org/mybatis-3/zh/index.html">http://www.mybatis.org/mybatis-3/zh/index.html</a></td>
+</tr>
+<tr>
+<td>Maven</td>
+<td>项目构建管理</td>
+<td><a href="http://maven.apache.org/">http://maven.apache.org/</a></td>
+</tr>
+</tbody>
+</table>
+<h4 class="mume-header" id="&#x524D;&#x7AEF;&#x6280;&#x672F;">前端技术:</h4>
+
+<table>
+<thead>
+<tr>
+<th>技术</th>
+<th>名称</th>
+<th>官网</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>jQuery</td>
+<td>函式库</td>
+<td><a href="http://jquery.com/">http://jquery.com/</a></td>
+</tr>
+<tr>
+<td>Bootstrap</td>
+<td>前端框架</td>
+<td><a href="http://getbootstrap.com/">http://getbootstrap.com/</a></td>
+</tr>
+<tr>
+<td>Bootstrap-table</td>
+<td>Bootstrap数据表格</td>
+<td><a href="http://bootstrap-table.wenzhixin.net.cn/">http://bootstrap-table.wenzhixin.net.cn/</a></td>
+</tr>
+<tr>
+<td>Font-awesome</td>
+<td>字体图标</td>
+<td><a href="http://fontawesome.io/">http://fontawesome.io/</a></td>
+</tr>
+</tbody>
+</table>
+<h2 class="mume-header" id="&#x754C;&#x9762;&#x6F14;&#x793A;">界面演示</h2>
+
+<h3 class="mume-header" id="&#x767B;&#x5F55;&#x9875;">登录页</h3>
+
+<p><img src="http://7xsmaf.com1.z0.glb.clouddn.com/login.png" alt="&#x767B;&#x5F55;&#x9875;" title="&#x767B;&#x5F55;&#x9875;"><br>
+<img src="http://7xsmaf.com1.z0.glb.clouddn.com/1.png" alt="&#x63A7;&#x5236;&#x53F0;" title="&#x63A7;&#x5236;&#x53F0;"></p>
+<h3 class="mume-header" id="&#x7528;&#x6237;&#x7BA1;&#x7406;">用户管理</h3>
+
+<p><img src="http://7xsmaf.com1.z0.glb.clouddn.com/2.png" alt="&#x7528;&#x6237;&#x7BA1;&#x7406;" title="&#x7528;&#x6237;&#x7BA1;&#x7406;"><br>
+<img src="http://7xsmaf.com1.z0.glb.clouddn.com/add.png" alt="&#x65B0;&#x589E;&#x4FEE;&#x6539;" title="&#x65B0;&#x589E;&#x4FEE;&#x6539;"></p>
+<h3 class="mume-header" id="&#x7FA4;&#x7EC4;&#x7BA1;&#x7406;">群组管理</h3>
+
+<p><img src="http://7xsmaf.com1.z0.glb.clouddn.com/3.png" alt="&#x7FA4;&#x7EC4;&#x7BA1;&#x7406;" title="&#x7FA4;&#x7EC4;&#x7BA1;&#x7406;"><br>
+<img src="http://7xsmaf.com1.z0.glb.clouddn.com/add2.png" alt="&#x65B0;&#x589E;&#x4FEE;&#x6539;" title="&#x65B0;&#x589E;&#x4FEE;&#x6539;"></p>
+<h3 class="mume-header" id="&#x89C4;&#x5219;&#x7BA1;&#x7406;">规则管理</h3>
+
+<p><img src="http://7xsmaf.com1.z0.glb.clouddn.com/4.png" alt="&#x89C4;&#x5219;&#x7BA1;&#x7406;" title="&#x89C4;&#x5219;&#x7BA1;&#x7406;"><br>
+<img src="http://7xsmaf.com1.z0.glb.clouddn.com/add3.png" alt="&#x65B0;&#x589E;&#x4FEE;&#x6539;" title="&#x65B0;&#x589E;&#x4FEE;&#x6539;"></p>
+<h2 class="mume-header" id="&#x8BB8;&#x53EF;&#x8BC1;">许可证</h2>
+
+<p><a href="LICENSE" title="Apache2">Apache2</a></p>
+
+      </div>
+      <div class="md-sidebar-toc"><ul>
+<li><a href="#qywx">qywx</a>
+<ul>
+<li><a href="#%E9%A1%B9%E7%9B%AE%E4%BB%8B%E7%BB%8D">项目介绍</a>
+<ul>
+<li><a href="#%E7%BB%84%E7%BB%87%E7%BB%93%E6%9E%84">组织结构</a></li>
+<li><a href="#%E6%8A%80%E6%9C%AF%E9%80%89%E5%9E%8B">技术选型</a>
+<ul>
+<li><a href="#%E5%90%8E%E7%AB%AF%E6%8A%80%E6%9C%AF">后端技术:</a></li>
+<li><a href="#%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF">前端技术:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#%E7%95%8C%E9%9D%A2%E6%BC%94%E7%A4%BA">界面演示</a>
+<ul>
+<li><a href="#%E7%99%BB%E5%BD%95%E9%A1%B5">登录页</a></li>
+<li><a href="#%E7%94%A8%E6%88%B7%E7%AE%A1%E7%90%86">用户管理</a></li>
+<li><a href="#%E7%BE%A4%E7%BB%84%E7%AE%A1%E7%90%86">群组管理</a></li>
+<li><a href="#%E8%A7%84%E5%88%99%E7%AE%A1%E7%90%86">规则管理</a></li>
+</ul>
+</li>
+<li><a href="#%E8%AE%B8%E5%8F%AF%E8%AF%81">许可证</a></li>
+</ul>
+</li>
+</ul>
 </div>
-<div class='file_content markdown-body'>
-<h1><a class="anchor" id="uiviewext-swift" href="#uiviewext-swift"></a>UIViewExt-Swift</h1>&#x000A;<p>UIViewExt的Swift版本</p>&#x000A;&#x000A;<p>使用与OC版的UIViewExt一样简单：</p>&#x000A;<div class="monokai"><div class="highlight"><pre>self.x  == self.frame.origin.x&#x000A;self.y  == self.frame.origin.y&#x000A;self.width == self.frame.size.width&#x000A;self.height == self.frame.size.height&#x000A;self.top&#x000A;self.bottom&#x000A;self.left&#x000A;self.right&#x000A;...&#x000A;</pre></div></div>&#x000A;<p>加入工程方法：</p>&#x000A;<div class="monokai"><div class="highlight"><pre>1.直接下载UIViewExt.swift放入工程&#x000A;2.使用CocoaPods管理依赖，在Podfile中加入&#x000A;pod 'UIViewExt-Swift'&#x000A;任意swift文件中import UIViewExt_Swift即可&#x000A;</pre></div></div>&#x000A;<p>方法暂时没有扩展，有什么想法给我留言吧：）</p>&#x000A;</div>
-</div>
-</div>
-</body>
-</html>
+      <a id="sidebar-toc-btn">≡</a>
+    </body>
+    
+    
+    
+    <script>
+(function bindTaskListEvent() {
+  var taskListItemCheckboxes = document.body.getElementsByClassName('task-list-item-checkbox')
+  for (var i = 0; i < taskListItemCheckboxes.length; i++) {
+    var checkbox = taskListItemCheckboxes[i]
+    var li = checkbox.parentElement
+    if (li.tagName !== 'LI') li = li.parentElement
+    if (li.tagName === 'LI') {
+      li.classList.add('task-list-item')
+    }
+  }
+}())    
+</script>
+    
+<script>
+
+var sidebarTOCBtn = document.getElementById('sidebar-toc-btn')
+sidebarTOCBtn.addEventListener('click', function(event) {
+  event.stopPropagation()
+  if (document.body.hasAttribute('html-show-sidebar-toc')) {
+    document.body.removeAttribute('html-show-sidebar-toc')
+  } else {
+    document.body.setAttribute('html-show-sidebar-toc', true)
+  }
+})
+</script>
+      
+  </html>
